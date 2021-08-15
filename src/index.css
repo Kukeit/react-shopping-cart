@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
-/*Reset CSS*/
+/*Start Reset CSS*/
 html {
   font-size: 62.5%;
   box-sizing: border-box;
@@ -19,7 +19,9 @@ textarea {
   font-size: 1.6rem;
   font-family: Montserrat, Arial, Helvetica, sans-serif;
 }
+/*End Reset CSS*/
 
+/*Setup template header main and footer*/
 .grid-container {
   display: grid;
   grid-template-areas: "header" "main" "footer";
@@ -41,7 +43,6 @@ header {
   background-color: #203040;
   color: #ffffff;
   display: flex;
-
   align-items: center;
   padding: 1.5rem;
 }
@@ -77,11 +78,10 @@ footer {
   flex: 1 20rem;
 }
 
-/**Products*/
+/**Products Component*/
 .products {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
   align-items: center;
   padding: 0;
   margin: 0;
@@ -89,7 +89,6 @@ footer {
 }
 
 .products li {
-  flex: 1 1 29rem;
   height: 47rem;
   padding: 1rem;
   margin: 1rem;
@@ -135,4 +134,18 @@ footer {
 
 .button:hover {
   border: 0.1rem #808080 solid;
+}
+
+/**filter*/
+
+.filter {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  margin: 1rem;
+  border-bottom: 0.1rem #c0c0c0 solid;
+}
+
+.filter div {
+  flex: 1;
 }
