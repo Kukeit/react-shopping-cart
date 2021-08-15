@@ -7,7 +7,6 @@ import Products from './components/Products';
 import Filter from './components/Filter';
 
 
-
 class App extends Component {
 
   constructor(){
